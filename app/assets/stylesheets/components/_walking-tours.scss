@@ -1,0 +1,40 @@
+.walking-tours {
+  /*margin: 50px 50px 30px 50px;*/
+  background: #f45f53;
+  padding: 50px 80px 80px 80px;
+  justify-content: space-between;
+}
+
+.walking-tours-cards {
+  border-radius: 5px;
+  background-color:#E9E8D9;
+  width: 360px;
+  -webkit-box-shadow: 3px 6px 15px -7px #353535;
+  -moz-box-shadow: 3px 6px 15px -7px #353535;
+  box-shadow: 3px 6px 15px -7px #353535;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.walking-tours-cards h3 {
+  font-size: 26px;
+  padding: 10px;
+  margin-top: 31px;
+  color: #f45f53;
+}
+
+.walking-tours-cards h2 {
+  color: grey;
+}
+
+.walking-tours-cards p {
+  font-size: 15px;
+  padding: 0 10px 10px 10px;
+}
+
+.walking-tours-cards button {
+  margin-bottom: 20px;
+}
