@@ -1,4 +1,12 @@
-
+body, html { /*body and html have to be 100% to push header down */
+    height:100%;
+    width: 100%;
+}
+body  { /* all content must be wrapped... #wrapper is my id.  Position relative IMPORTANT */
+    position: relative;
+    height: auto;
+    min-height: 100%;
+}
 
 body{
   background: #f45f53;

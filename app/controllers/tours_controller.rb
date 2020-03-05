@@ -4,8 +4,7 @@ class ToursController < ApplicationController
   # GET /tours
   # GET /tours.json
   def index
-    @tours = Tour.all
-
+    @tours = Tour.order(:id)
   end
 
   # GET /tours/1
@@ -69,7 +68,7 @@ class ToursController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def tour_params
-      params.fetch(:tour, {})
-    end
+  def tour_params
+    params.require(:tour).permit(:name, :description)
+  end
 end
