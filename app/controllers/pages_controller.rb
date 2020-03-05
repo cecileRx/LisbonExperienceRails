@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
      @contact = Pages.new(params[:pages])
+     @tours = Tour.all
   end
 
   def create
