@@ -5,6 +5,7 @@ class ToursController < ApplicationController
   # GET /tours.json
   def index
     @tours = Tour.all
+
   end
 
   # GET /tours/1
