@@ -8,20 +8,21 @@
 
               <div class="collapse navbar-collapse" id="mynav" style=" margin-right: 265px;">
               <ul class="navbar-nav nav-mine ml-auto" >
-                 <li class="nav-item active"  >
-                  <a  class="nav-link smoothscroll mr-3" href="#home">HOME</a>
+                 <li class="nav-item active" >
+                  <%= link_to "HOME", root_path(:anchor => "home"), class:"nav-link smoothscroll mr-3" %>
+                  </li>
+
+                  <li class="nav-item" >
+                  <%= link_to "WALKING TOURS", root_path(:anchor => "walking-tours"), class:"nav-link smoothscroll mr-3" %>
                   </li>
 
                   <li class="nav-item " >
-                  <a  class="nav-link  smoothscroll mr-3" href="#about-us">ABOUT US</a>
+                   <%= link_to "ABOUT US", root_path(:anchor => "about-us"), class:"nav-link smoothscroll mr-3" %>
                   </li>
 
-                  <li class="nav-item" >
-                  <a  class="nav-link  smoothscroll mr-3" href="#walking-tours">WALKING TOURS</a>
-                  </li>
 
                   <li class="nav-item" >
-                  <a  class="nav-link smoothscroll mr-3" href="#full-service">FULL SERVICE</a>
+                    <%= link_to "FULL SERVICE", root_path(:anchor => "full-service"), class:"nav-link smoothscroll mr-3" %>
                   </li>
 
                   <li class="nav-item" >
@@ -29,7 +30,7 @@
                   </li>
 
                   <li class="nav-item" >
-                  <a  class="nav-link smoothscroll mr-3" href="#contact-us">CONTACT US</a>
+                  <%= link_to "CONTACT US", root_path(:anchor => "contact-us"), class:"nav-link smoothscroll mr-3" %>
                   </li>
               </ul>
         </div>
