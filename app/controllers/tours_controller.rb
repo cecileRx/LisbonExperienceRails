@@ -1,5 +1,6 @@
 class ToursController < ApplicationController
   before_action :set_tour, only: [:show, :edit, :update, :destroy]
+  before_action :authorized, only: [:new, :edit, :update, :destroy]
 
   # GET /tours
   # GET /tours.json
