@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'mail_form'
+gem 'bcrypt', '~> 3.1', '>= 3.1.13'
 
 
 group :development do
