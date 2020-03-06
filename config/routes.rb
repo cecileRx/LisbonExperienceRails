@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   root  'pages#home'
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  get 'signup', to: 'users#new', as: 'signup'
-  get 'login', to: 'sessions#new', as: 'login'
+  get 'editor', to: 'sessions#new', as: 'editor'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   resources :pages, only: [:home, :new, :create]
   resources :tours
