@@ -1,3 +1,7 @@
+
+
+// ---------HOME-----------
+
 .walking-tours {
   /*margin: 50px 50px 30px 50px;*/
   background: #f45f53;
@@ -37,4 +41,26 @@
 
 .walking-tours-cards button {
   margin-bottom: 20px;
+}
+
+
+// ---------INDEX-----------
+
+.walking-tours-list {
+  background-color:#E9E8D9;
+  margin: 10px;
+}
+
+.tours-title h1 {
+  color: #E9E8D9;
+  text-align: center;
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.tours-title p {
+  color: #E9E8D9;
+  text-align: right;
+  font-family: europa, sans-serif;
 }

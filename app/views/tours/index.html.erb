@@ -1,30 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Waking Tours</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @tours.each do |tour| %>
-      <div class="walking-tours-list d-flex">
+<div class="container">
+  <div class="tours-title">
+    <h1 >WALKING TOURS</h1>
+    <p> <%= link_to 'New Tour', new_tour_path %></p>
+  </div>
+  <div class="row m-3">
+     <div class="tours-list">
+        <% @tours.each do |tour| %>
+         <div class="walking-tours-list d-flex">
           <img src="https://picsum.photos/300" alt="picture description" >
           <div class="walking-tours-info">
             <h3> <%= tour.name  %> </h3>
             <p> <%= tour.description %> </p>
-            <p> <%= tour.id %> </p>
-            <p><%= link_to 'Edit', edit_tour_path(tour) %>
-            <p><%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <p><%= link_to 'Edit', edit_tour_path(tour) %> <%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </p>
           </div>
-      </div>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Tour', new_tour_path %>
+         </div>
+        <% end %>
+    </div>
+  </div>
+</div>
