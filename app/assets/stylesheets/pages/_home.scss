@@ -6,8 +6,8 @@ body  { /* all content must be wrapped... #wrapper is my id.  Position relative 
   position: relative;
   height: auto;
   min-height: 100%;
-  background: #f45f53;
-  color: #5E5E58;
+  background: $le_orange;
+  color: $le_gray;
   font-family: europa, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -16,7 +16,7 @@ body  { /* all content must be wrapped... #wrapper is my id.  Position relative 
 
 body h2 {
   font-family: europa, sans-serif;
-  color: #f45f53;
+  color: $le_orange;
   font-size: 3rem;
 }
 
