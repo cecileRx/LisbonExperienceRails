@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'mail_form'
 gem 'bcrypt', '~> 3.1', '>= 3.1.13'
+gem 'cloudinary', '~> 1.13', '>= 1.13.2'
 
 
 group :development do

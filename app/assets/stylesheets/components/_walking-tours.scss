@@ -4,14 +4,14 @@
 
 .walking-tours {
   /*margin: 50px 50px 30px 50px;*/
-  background: #f45f53;
+  background: $le_orange;
   padding: 50px 80px 80px 80px;
   justify-content: space-between;
 }
 
 .walking-tours-cards {
   border-radius: 5px;
-  background-color:#E9E8D9;
+  background-color:$le_cream;
   width: 360px;
   -webkit-box-shadow: 3px 6px 15px -7px #353535;
   -moz-box-shadow: 3px 6px 15px -7px #353535;
@@ -27,11 +27,11 @@
   font-size: 26px;
   padding: 10px;
   margin-top: 31px;
-  color: #f45f53;
+  color: $le_orange;
 }
 
 .walking-tours-cards h2 {
-  color: grey;
+  color: $le_gray;
 }
 
 .walking-tours-cards p {
@@ -47,12 +47,12 @@
 // ---------INDEX-----------
 
 .walking-tours-list {
-  background-color:#E9E8D9;
+  background-color:$le_cream;
   margin: 10px;
 }
 
 .tours-title h1 {
-  color: #E9E8D9;
+  color: $le_cream;
   text-align: center;
   font-family: europa, sans-serif;
   font-style: normal;
@@ -60,7 +60,18 @@
 }
 
 .tours-title p {
-  color: #E9E8D9;
+  color: $le_cream;
   text-align: right;
   font-family: europa, sans-serif;
+}
+
+// ---------EDIT TOUR-----------
+.edit-tour-container {
+  background-color: $le_cream;
+  height: 850px;
+}
+
+.edit-tour {
+  background: $le_orange;
+  text-align: center;
 }
