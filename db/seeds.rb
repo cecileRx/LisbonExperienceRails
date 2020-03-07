@@ -9,20 +9,30 @@ puts 'creating tours'
 
 tour1 = Tour.new(
   name: 'Tour of the day',
-  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
+  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad',
+  full_information: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam adlorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
   )
 tour1.save!
 
 tour2 = Tour.new(
   name: 'Tour of the month',
-  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
+  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad',
+  full_information: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam adlorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
   )
 tour2.save!
 
 tour3 = Tour.new(
   name: 'Tour of the year',
-  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
+  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad',
+  full_information: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam adlorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
   )
 tour3.save!
+
+puts 'creating editor'
+
+user1 = User.new(
+  email:'editor',
+  password:'editor_le')
+user1.save!
 
 puts 'Finished!'

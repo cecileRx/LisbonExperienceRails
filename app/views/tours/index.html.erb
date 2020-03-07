@@ -14,7 +14,7 @@
           <img src="https://picsum.photos/300" alt="picture description" >
           <div class="walking-tours-info">
             <h3> <%= tour.name  %> </h3>
-            <p> <%= tour.description %> </p>
+            <p> <%= tour.full_information %> </p>
             <% if logged_in? %>
             <%= link_to 'Edit', edit_tour_path(tour) %> <%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %>
             <% end %>
