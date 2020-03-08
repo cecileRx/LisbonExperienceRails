@@ -5,6 +5,7 @@ body, html { /*body and html have to be 100% to push header down */
 body  { /* all content must be wrapped... #wrapper is my id.  Position relative IMPORTANT */
   position: relative;
   height: auto;
+  padding-bottom: 66px;
   min-height: 100%;
   background: $le_orange;
   color: $le_gray;

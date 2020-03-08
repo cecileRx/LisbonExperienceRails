@@ -46,7 +46,7 @@
 
 // ---------INDEX-----------
 
-.walking-tours-list {
+.walking-tours-details {
   background-color:$le_cream;
   margin: 10px;
 }
@@ -74,4 +74,8 @@
 .edit-tour {
   background: $le_orange;
   text-align: center;
+}
+
+.form-label-style {
+  color: $le_orange;
 }
