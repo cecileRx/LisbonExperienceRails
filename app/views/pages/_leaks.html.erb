@@ -1,0 +1,17 @@
+<section id="leaks">
+  <h2> News</h2>
+  <div class="row leaks ">
+    <% @leaks.each do |leak| %>
+      <div class="leaks-cards-item">
+          <div class="leak-card-up">
+            <img src="https://picsum.photos/300"  alt="picture description" >
+          </div>
+          <div class="leak-card-down">
+            <p> <%= leak.title %> </p>
+            <p> <%= leak.description %> </p>
+             <%= link_to 'More info', leaks_path, class: 'btn btn-outline-secondary' %>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</section>

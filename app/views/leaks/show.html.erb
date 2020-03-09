@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @leak.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @leak.description %>
+</p>
+
+<%= link_to 'Edit', edit_leak_path(@leak) %> |
+<%= link_to 'Back', leaks_path %>

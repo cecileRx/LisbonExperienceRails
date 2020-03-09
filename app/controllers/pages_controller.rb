@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
      @contact = Pages.new(params[:pages])
      @tours = Tour.order(:id)
+     @leaks = Leak.all
   end
 
   def create
