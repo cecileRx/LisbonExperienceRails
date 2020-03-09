@@ -1,9 +1,66 @@
+#leaks {
+ background-color: $le_cream;
+}
+
 .leaks {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
+
 .leaks-cards-item {
+
   width: 300px;
-  height: 500px;
+  margin: 28px 10px 67px 5px;
+
+}
+
+.leak-card-down{
+  min-height: 150px;
+}
+
+.leak-card-down .light-font-title {
+  color: $le_cream;
+  font-weight: 700;
+  padding: 10px 10px 0 10px;
+
+}
+
+.leak-card-down .light-font-description {
+  color: #e9e8d9c9;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 0px 10px 5px 10px;
+}
+
+.leak-card-down .dark-font-title {
+  font-weight: 700;
+  padding: 10px 10px 0 10px;
+}
+
+.leak-card-down .dark-font-description {
+  padding: 0px 10px 5px 10px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #33394099;
+}
+
+.leak-icon {
+  padding: 0px 0px 15px 15px;
+}
+
+.fas.light-item {
+  font-size:50px;
+  color: $le_light_green;
+}
+
+i :hover {
+  font-size:53px;
+}
+
+.fas.dark-item {
+  font-size:50px;
 }

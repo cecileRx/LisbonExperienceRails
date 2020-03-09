@@ -37,25 +37,29 @@ puts 'creating leaks'
 
 leak1 = Leak.new(
   title: 'the chief is dead, Vive the chief!',
-  description: 'Lorem ipsum amet aliqua in incididunt ad deserunt sit amet dolore laboris.'
+  description: 'Lorem ipsum amet aliqua in incididunt ad deserunt sit amet dolore laboris.',
+  color: '#333940'
   )
 leak1.save!
 
 leak2 = Leak.new(
   title: 'Technologie: Nouveau monde cherche nouveaux managers',
-  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.'
+  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.',
+  color: '#d2d2c8'
   )
 leak2.save!
 
 leak3 = Leak.new(
   title: 'Le collaborateur moderne, un humain avec de nouvelles attentes',
-  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.'
+  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.',
+  color: '#f45f53'
   )
 leak3.save!
 
 leak4 = Leak.new(
   title: 'WinLab présent au BIM World 2020' ,
-  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.'
+  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.',
+  color: '#d2d2c8'
   )
 leak4.save!
 
