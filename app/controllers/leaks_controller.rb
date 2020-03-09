@@ -7,6 +7,10 @@ class LeaksController < ApplicationController
     @leaks = Leak.all
   end
 
+  def colored?
+    @leak.color == '#f45f53'
+  end
+
   # GET /leaks/1
   # GET /leaks/1.json
   def show

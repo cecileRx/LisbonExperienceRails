@@ -1,17 +1,24 @@
 <section id="leaks">
-  <h2> News</h2>
-  <div class="row leaks ">
+  <h2 class="text-center"> News</h2>
+  <div class="leaks flex-fill  ">
     <% @leaks.each do |leak| %>
-      <div class="leaks-cards-item">
+      <article class="leaks-cards-item ">
           <div class="leak-card-up">
-            <img src="https://picsum.photos/300"  alt="picture description" >
+            <img src="https://picsum.photos/300/200"  alt="picture description" >
           </div>
-          <div class="leak-card-down">
-            <p> <%= leak.title %> </p>
-            <p> <%= leak.description %> </p>
-             <%= link_to 'More info', leaks_path, class: 'btn btn-outline-secondary' %>
+          <div class="leak-card-down" style="background-color: <%= leak.color %>;">
+            <p class= <%= leak.color != '#d2d2c8' ? 'light-font-title' : 'dark-font-title' %> > <%= leak.title %> </p>
+            <p class= <%= leak.color != '#d2d2c8' ? 'light-font-description' : 'dark-font-description' %>> <%= leak.description %> </p>
           </div>
-      </div>
+          <div class="leak-icon"style="background-color: <%= leak.color %>;">
+               <% if leak.color != '#d2d2c8' %>
+                <i class="fas fa-angle-right light-item"></i>
+               <% else %>
+                <i class="fas fa-angle-right dark-item"></i>
+               <% end %>
+         </div>
+      </article>
     <% end %>
   </div>
 </section>
+
