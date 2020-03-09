@@ -112,11 +112,17 @@
   color: #468847;
   text-align: left;
   font-size: .8em;
+
 }
 
 #contact-us {
   display: flex;
   justify-content: space-around;
+  background-color: #50504B;
+  padding: 60px 0;
+  min-height: 800px;
+  align-items: center;
+
 }
 
 #contact-us h2 {

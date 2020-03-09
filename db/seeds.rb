@@ -38,7 +38,7 @@ puts 'creating leaks'
 leak1 = Leak.new(
   title: 'the chief is dead, Vive the chief!',
   description: 'Lorem ipsum amet aliqua in incididunt ad deserunt sit amet dolore laboris.',
-  color: '#333940'
+  color: '#50504B'
   )
 leak1.save!
 
@@ -52,7 +52,7 @@ leak2.save!
 leak3 = Leak.new(
   title: 'Le collaborateur moderne, un humain avec de nouvelles attentes',
   description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.',
-  color: '#f45f53'
+  color: '#87867E'
   )
 leak3.save!
 
