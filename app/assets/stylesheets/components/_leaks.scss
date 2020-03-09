@@ -1,5 +1,11 @@
 #leaks {
- background-color: $le_cream;
+ background-color: $le_orange;
+}
+
+#leaks h2 {
+  color: $le_cream;
+  padding: 50px 0px 30px 0px;
+  font-size: 30px;
 }
 
 .leaks {
@@ -54,7 +60,7 @@
 
 .fas.light-item {
   font-size:50px;
-  color: $le_light_green;
+  color: $le_green;
 }
 
 i :hover {
