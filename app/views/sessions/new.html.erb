@@ -1,15 +1,22 @@
-<p id='alert'><%= alert %></p>
-<h1>Login</h1>
-<%= form_tag sessions_path do |form| %>
-  <div class='field'>
-    <%= label_tag :email %>
-    <%= text_field_tag :email %>
+<div class="container session-form d-flex text-align-center">
+  <div class="row card log-form col-6 ">
+    <p id='alert'><%= alert %></p>
+    <h1>Login</h1>
+    <div class="form-group">
+      <%= form_tag sessions_path do |form| %>
+        <div class=' form-text field'>
+          <%= label_tag :email %>
+          <%= text_field_tag :email %>
+        </div>
+        <div class=' form-text field'>
+          <%= label_tag :password %>
+          <%= password_field_tag :password %>
+        </div>
+        <div class='form-check actions'>
+          <%= submit_tag 'Login', class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
   </div>
-  <div class='field'>
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-  </div>
-  <div class='actions'>
-    <%= submit_tag 'Login' %>
-  </div>
-<% end %>
+</div>
+
