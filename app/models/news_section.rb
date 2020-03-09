@@ -1,2 +1,0 @@
-class NewsSection < ApplicationRecord
-end
