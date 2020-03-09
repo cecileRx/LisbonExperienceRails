@@ -1,4 +1,4 @@
-Lisbon Experience is a website to present tours in Liboa, with a local guide.
+Lisbon Experience is a website to present tours in Lisboa, with a local guide.
 
 
 
