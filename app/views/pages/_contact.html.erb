@@ -1,14 +1,16 @@
-<section id="contact-us" class="d-flex" >
-    <div class="contact-form">
-      <%= form_for @contact, url: pages_path, remote: true do |f| %>
-          <div class="form-style-6">
-            <h1>Contact us</h1>
+<section id="contact-us"  >
+      <div id="flash-message">
+         <%= render 'shared/flash' %>
+      </div>
+    <div class="contact-form d-flex">
+       <div class="formulaire">
+         <%= form_for @contact, url: pages_path, remote: true do |f| %>
+            <div class="form-style-6">
+              <h1>Contact us</h1>
               <%= f.text_field  :name, required: true, class: "contact-form-text",placeholder: "Your name" %></br>
-
               </br>
               <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "Your email" %></br>
-
-             </br>
+              </br>
               <%= f.text_area :message, rows: 8, cols: 80, required: true, class: "contact-form-text-area",
                                 placeholder: "Send me a message"%></br>
 
@@ -17,17 +19,14 @@
                 <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
               </div>
                 <%= f.submit 'Send Message', class: 'contact-form-button' %>
-          </div>
-       <% end %>
-
-      <div class="col-md-6" id="flash-message">
-         <%= render 'shared/flash' %>
+            </div>
+        <% end %>
       </div>
-    </div>
       <div class='col-md-6 contact'>
-        <h2> About us </h2>
-        <p>Elit sint aliqua ullamco in dolor eiusmod ut duis do reprehenderit occaecat culpa sunt consequat do ut mollit duis mollit dolore.Elit sint aliqua ullamco in dolor eiusmod ut duis do reprehenderit occaecat culpa sunt consequat do ut mollit duis mollit dolore.Elit sint aliqua ullamco in dolor eiusmod ut duis do reprehenderit occaecat culpa sunt consequat do ut mollit duis mollit dolore. Duis culpa eu aliquip in in ex sed qui nostrud veniam excepteur amet enim amet deserunt nulla ut est qui eu ad enim velit culpa adipisicing sit duis. Dolor amet eiusmod voluptate qui aute sunt culpa nisi dolor sed eu dolore veniam veniam in pariatur excepteur elit culpa pariatur eiusmod proident sunt sint est amet irure aute cupidatat enim. Sint aliquip amet eu officia consequat duis dolor aute nulla. Enim nulla mollit sunt tempor proident ea ea labore dolor qui labore officia velit ut magna consequat ullamco magna tempor minim ex officia excepteur cillum sit ullamco enim.</p>
+          <h2> About us </h2>
+          <p>Elit sint aliqua ullamco in dolor eiusmod ut duis do reprehenderit occaecat culpa sunt consequat do ut mollit duis mollit dolore.Elit sint aliqua ullamco in dolor eiusmod ut duis do reprehenderit occaecat culpa sunt consequat do ut mollit duis mollit dolore.Elit sint aliqua ullamco in dolor eiusmod ut duis do reprehenderit occaecat culpa sunt consequat do ut mollit duis mollit dolore. Duis culpa eu aliquip in in ex sed qui nostrud veniam excepteur amet enim amet deserunt nulla ut est qui eu ad enim velit culpa adipisicing sit duis. Dolor amet eiusmod voluptate qui aute sunt culpa nisi dolor sed eu dolore veniam veniam in pariatur excepteur elit culpa pariatur eiusmod proident sunt sint est amet irure aute cupidatat enim. Sint aliquip amet eu officia consequat duis dolor aute nulla. Enim nulla mollit sunt tempor proident ea ea labore dolor qui labore officia velit ut magna consequat ullamco magna tempor minim ex officia excepteur cillum sit ullamco enim.</p>
       </div>
+  </div>
 </section>
 
 
