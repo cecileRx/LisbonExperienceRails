@@ -11,7 +11,7 @@
      <div class="tours-list">
         <% @tours.each do |tour| %>
          <div class="walking-tours-details d-flex">
-          <img src="https://picsum.photos/300" alt="picture description" >
+          <%= cl_image_tag tour.photo.key, height: 300, width: 300, crop: :fill %>
           <div class="walking-tours-info">
             <h3> <%= tour.name  %> </h3>
             <p> <%= tour.full_information %> </p>
