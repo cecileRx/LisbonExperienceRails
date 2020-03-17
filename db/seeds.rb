@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+
 puts "Cleaning database..."
 Tour.destroy_all
 Leak.destroy_all
@@ -17,6 +19,9 @@ tour1 = Tour.new(
   description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad',
   full_information: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam adlorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
   )
+
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584458546/LisbonExperience/Mod_Lisboa_M0367_oyshdu.jpg")
+tour1.photo.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
 tour1.save!
 
 tour2 = Tour.new(
@@ -24,14 +29,10 @@ tour2 = Tour.new(
   description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad',
   full_information: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam adlorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
   )
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584458546/LisbonExperience/Mod_Lisboa_M0367_oyshdu.jpg")
+tour2.photo.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
 tour2.save!
 
-tour3 = Tour.new(
-  name: 'Tour of the year',
-  description: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad',
-  full_information: 'lorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam adlorem ipsum Aute elit duis qui irure . Fugiat et consequat non dolor cillum incididunt dolor eu aliquip excepteur nisi nostrud dolor veniam ad'
-  )
-tour3.save!
 
 puts 'creating leaks'
 
@@ -70,4 +71,31 @@ user1 = User.new(
   password:'editor_le')
 user1.save!
 
+user2 = User.new(
+  email:'editors',
+  password:'editor_le')
+user2.save!
+
+user3 = User.new(
+  email:'editorss',
+  password:'editor_le')
+user3.save!
+
+user4 = User.new(
+  email:'editorsss',
+  password:'editor_le')
+user4.save!
+
+user5 = User.new(
+  email:'editorssss',
+  password:'editor_le')
+user5.save!
+user6 = User.new(
+  email:'editorsssss',
+  password:'editor_le')
+user6.save!
+user7 = User.new(
+  email:'editorssssss',
+  password:'editor_le')
+user7.save!
 puts 'Finished!'

@@ -3,7 +3,7 @@
   <div class="row walking-tours d-flex">
     <% @tours.each do |tour| %>
       <div class="walking-tours-cards item">
-            <img src="https://picsum.photos/300"  alt="picture description" >
+            <%= cl_image_tag tour.photo.key, height: 300, width: 300, crop: :fill %>
             <h3> <%= tour.name  %> </h3>
             <p> <%= tour.description %> </p>
              <%= link_to 'More info', tours_path, class: 'btn btn-outline-secondary' %>
