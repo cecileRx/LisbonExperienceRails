@@ -7,3 +7,23 @@
   text-shadow: 1px 1px 5px black;
 
 }
+
+.carousel-inner h1 {
+  position: absolute;
+  text-align: right;
+  color: white;
+  right: 220px;
+  top: 174px;
+  z-index: 2;
+  font-size: 80px;
+}
+
+.carousel-inner h2 {
+  position: absolute;
+  text-align: right;
+  color: white;
+  right: 248px;
+  top: 275px;
+  z-index: 2;
+  font-size: 40px;
+}
