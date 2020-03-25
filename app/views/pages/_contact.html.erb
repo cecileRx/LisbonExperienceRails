@@ -6,24 +6,10 @@
 
     <div class="contact-section">
 
-      <div class='col-md-6 contact'>
-        <%= cl_image_tag("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584463828/LisbonExperience/me1_zexzzp.jpg",
-
-            :width=>100, :height=>100, :gravity=>"face", :radius=>"max", :crop=>"scale")
-
-        %>
-
-
-          <h2> About us </h2>
-            <p>Hello, my name is Miguel Cardoso! I’m an easygoing person who loves to travel and meet different cultures. I'm a real Lisboeta meaning that I live and love Lisbon very intensely. Learning is my life's leitmotiv and meeting people is by far the best way to do it. Did I mention that I'm also a foodie? Yes, I practice one of our nationals sports: sampling food and wine. So, if you like to exercise your palate you'll be in very good hands with me.</br>
-             I’m the founder of the Lisbonexperience company and I was raised in Lisbon’s south bank thus I grew up looking over the big city imagining what secrets were hidden there. Lisbon’s south bank has the biggest beach of the region with fishing communities and old surfing traditions. I worked for the greater part of my life for international companies, namely Pfizer, Inc., and after the big     financial crisis I woke up unemployed and sadly without a clue on what to do next.
-            One day a very good friend offered me a book about Lisbon’s history and a light (or a book) enlightened the way. Thus, since the beginning of 2013 I introduce the city to our visitors in all its   aspects helping them to improve their experience here.</p>
-      </div>
-
       <div class="formulaire">
          <%= form_for @contact, url: pages_path, remote: true do |f| %>
             <div class="form-style-6">
-              <h1>Contact us</h1>
+              <h1>Contact me!</h1>
               <%= f.text_field  :name, required: true, class: "contact-form-text",placeholder: "Your name" %></br>
               </br>
               <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "Your email" %></br>
@@ -41,6 +27,7 @@
       </div>
 
     </div>
+
 </section>
 
 

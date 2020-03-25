@@ -1,13 +1,17 @@
 <section id="walking-tours">
-  <h2> Walking tours</h2>
-  <div class="row walking-tours d-flex">
-    <% @tours.each do |tour| %>
-      <div class="walking-tours-cards item">
-            <%= cl_image_tag tour.photo.key, height: 300, width: 300, crop: :fill %>
-            <h3> <%= tour.name  %> </h3>
-            <p> <%= tour.description %> </p>
-             <%= link_to 'More info', tours_path, class: 'btn btn-outline-secondary' %>
+  <h2 class="text-center">Lisbon walking tours </h2>
+
+
+      <div class="walking-tours d-flex">
+        <% @tours.each do |tour| %>
+          <div class="walking-tours-cards item">
+                <%= cl_image_tag tour.photo.key, height: 300, width: 400, crop: :fill %>
+                <h3> <%= tour.name  %> </h3>
+                <p> <%= tour.description %> </p>
+                 <%= link_to 'More info', tours_path, class: 'btn btn-outline-secondary' %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
+
+
 </section>

@@ -1,7 +1,10 @@
 
 
 // ---------HOME-----------
-
+#walking-tours h2 {
+  color: $le_cream;
+  padding-top: 100px;
+}
 .walking-tours {
   /*margin: 50px 50px 30px 50px;*/
   background: $le_orange;
@@ -12,7 +15,7 @@
 .walking-tours-cards {
   border-radius: 5px;
   background-color:$le_cream;
-  width: 360px;
+  width: 450px;
   -webkit-box-shadow: 3px 6px 15px -7px #353535;
   -moz-box-shadow: 3px 6px 15px -7px #353535;
   box-shadow: 3px 6px 15px -7px #353535;

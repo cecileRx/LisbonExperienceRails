@@ -1,3 +1,5 @@
+
+
 #banner {
   position: relative;
   text-align: center;
@@ -9,21 +11,24 @@
 }
 
 .carousel-inner h1 {
+  font-family: $my-font;
   position: absolute;
   text-align: right;
   color: white;
   right: 220px;
   top: 174px;
   z-index: 2;
-  font-size: 80px;
+  font-size: 45px;
 }
 
 .carousel-inner h2 {
   position: absolute;
+  font-family: $my-font;
   text-align: right;
-  color: white;
-  right: 248px;
-  top: 275px;
+  color: le_orange;
+  right: 228px;
+  top: 251px;
   z-index: 2;
-  font-size: 40px;
+  font-size: 30px;
 }
+
