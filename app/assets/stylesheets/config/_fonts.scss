@@ -14,3 +14,16 @@ $headers-font: "europa", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family:'Aquatico-Regular';
+  src:font-url('Aquatico-Regular.otf');
+}
+$my-font: "Aquatico";
+
+@font-face {
+  font-family:'PeaceSans';
+  src:font-url('PeaceSans.otf');
+}
+
+// $my-font: "PeaceSans";
