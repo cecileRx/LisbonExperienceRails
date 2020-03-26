@@ -3,20 +3,28 @@
    padding: 80px;
 }
 
-#full-service .taylor{
-border: 1px solid $le_gray ;
-padding: 10px;
-}
-
 #full-service .customize {
   display: flex;
   justify-content: space-around;
+}
+
+#full-service i {
+  border: 2px black solid;
+  border-radius: 50%;
+  border-color: $le_orange;
+  padding: 19px;
+  margin-bottom: 20px;
+}
+
+.fa-user-friends {
+  font-size: 30px;
 }
 
 .full-service p {
     font-size: 20px;
     padding: 50px 180px;
 }
+
 
 .full-service h2 {
     padding-top: 50px;
