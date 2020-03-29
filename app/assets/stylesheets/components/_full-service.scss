@@ -9,20 +9,30 @@
 }
 
 #full-service i {
-  border: 2px black solid;
+  border: 2px $le_orange solid;
   border-radius: 50%;
-  border-color: $le_orange;
-  padding: 19px;
   margin-bottom: 20px;
+}
+
+#full-service i.fa-calendar-alt  {
+  font-size: 29px;
+  padding: 22px;
 }
 
 .fa-user-friends {
   font-size: 30px;
+  padding: 24px;
+
+}
+
+.fa-binoculars {
+  font-size: 30px;
+  padding: 22px;
 }
 
 .full-service p {
-    font-size: 20px;
-    padding: 50px 180px;
+  font-size: 20px;
+  padding: 50px 180px;
 }
 
 

@@ -1,6 +1,7 @@
-<p id="notice"><%= notice %></p>
 
-<div class="container">
+
+<div class="index-tours">
+  <p id="notice"><%= notice %></p>
   <div class="tours-title">
     <h1 >WALKING TOURS</h1>
     <% if logged_in? %>
@@ -10,16 +11,19 @@
   <div class="row m-3">
      <div class="tours-list">
         <% @tours.each do |tour| %>
-         <div class="walking-tours-details d-flex">
-          <%= cl_image_tag tour.photo.key, height: 300, width: 300, crop: :fill %>
+         <div class="walking-tours-details ">
+
           <div class="walking-tours-info">
             <h3> <%= tour.name  %> </h3>
             <p> <%= tour.full_information %> </p>
-            <% if logged_in? %>
-            <%= link_to 'Edit', edit_tour_path(tour) %> <%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %>
-            <% end %>
           </div>
-         </div>
+
+            <%= cl_image_tag tour.photo.key, height: 300, width: 300, crop: :fill %>
+
+          </div>
+            <% if logged_in? %>
+              <%= link_to 'Edit', edit_tour_path(tour), :class => "tours-links" %> <%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
         <% end %>
     </div>
   </div>
