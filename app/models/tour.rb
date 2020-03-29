@@ -3,5 +3,5 @@ class Tour < ApplicationRecord
   validates :description, presence: true
   validates :full_information, presence: true
 
-  has_one_attached :photo
+  has_many_attached :photos
 end

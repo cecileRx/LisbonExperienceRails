@@ -9,7 +9,7 @@
           <%= f.text_area :description, :rows => 6, :cols => 120 %>
           Full information in Walking tours:
           <%= f.text_area :full_information, :rows => 10, :cols => 120 %>
-          <%= f.input :photo, as: :file %>
+          <%= f.input :photos, as: :file, input_html: { multiple: true } %>
           <%= f.submit 'Update', class: 'btn btn-primary mr-2 mt-3' %>
           <%= link_to 'Cancel', tours_path, class: 'btn btn-secondary mt-3' %>
         <% end %>
