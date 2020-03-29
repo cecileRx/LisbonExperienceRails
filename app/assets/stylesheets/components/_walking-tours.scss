@@ -8,8 +8,9 @@
 .walking-tours {
   /*margin: 50px 50px 30px 50px;*/
   background: $le_orange;
-  padding: 50px 80px 80px 80px;
-  justify-content: space-around;
+  padding: 60px 0px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .walking-tours-cards {
@@ -49,17 +50,21 @@
 
 // ---------INDEX-----------
 
+.index-tours {
+  background-color:$le_cream;
+}
+
 .walking-tours-details {
   background-color:$le_cream;
   margin: 10px;
+  padding: 66px 150px;
 }
 
+
 .tours-title h1 {
-  color: $le_cream;
+  color: $le_orange;
+  font-family: $my-font;
   text-align: center;
-  font-family: europa, sans-serif;
-  font-style: normal;
-  font-weight: 300;
 }
 
 .tours-title p {
@@ -68,6 +73,19 @@
   font-family: europa, sans-serif;
 }
 
+.walking-tours-info {
+
+
+}
+
+.walking-tours-info p {
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.tours-links {
+   padding: 30px 20px 30px 150px;
+}
 // ---------EDIT TOUR-----------
 .edit-tour-container {
   background-color: $le_cream;
