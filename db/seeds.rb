@@ -22,7 +22,7 @@ Meeting point in front of Hard Rock Café Lisboa'
   )
 
 file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584463037/LisbonExperience/Tiles_ofa87k.jpg")
-tour1.photo.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
+tour1.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
 tour1.save!
 
 tour2 = Tour.new(
@@ -33,7 +33,7 @@ In our pathway I’ll talk about some of our most important historical moments l
 Meeting point in front of Hard Rock Café Lisboa'
   )
 file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584458546/LisbonExperience/Mod_Lisboa_M0367_oyshdu.jpg")
-tour2.photo.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
+tour2.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
 tour2.save!
 
 
@@ -101,4 +101,9 @@ user7 = User.new(
   email:'editorssssss',
   password:'editor_le')
 user7.save!
+user8 = User.new(
+  id: 17,
+  email:'editorsssssss',
+  password:'editor_le')
+user8.save!
 puts 'Finished!'

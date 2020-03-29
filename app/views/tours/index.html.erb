@@ -1,11 +1,10 @@
 
 
 <div class="index-tours">
-  <p id="notice"><%= notice %></p>
   <div class="tours-title">
     <h1 >WALKING TOURS</h1>
     <% if logged_in? %>
-    <p> <%= link_to 'New Tour', new_tour_path %></p>
+    <p class = "editor-new"> <%= link_to 'New Tour', new_tour_path %></p>
      <% end %>
   </div>
   <div class="row m-3">
@@ -17,8 +16,12 @@
             <h3> <%= tour.name  %> </h3>
             <p> <%= tour.full_information %> </p>
           </div>
+          <div class="tours-pics">
+            <% tour.photos.each do |photo| %>
+             <%= cl_image_tag photo.key, height: 300, width: 300, crop: :fill %>
+            <% end %>
+          </div>
 
-            <%= cl_image_tag tour.photo.key, height: 300, width: 300, crop: :fill %>
 
           </div>
             <% if logged_in? %>
