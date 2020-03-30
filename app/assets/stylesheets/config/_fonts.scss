@@ -15,15 +15,20 @@ $headers-font: "europa", "sans-serif";
 // }
 // $my-font: "Font Name";
 
+// @font-face {
+//   font-family:'Aquatico-Regular';
+//   src:font-url('Aquatico-Regular.otf');
+// }
+// $my-font: "Aquatico";
+
 @font-face {
-  font-family:'Aquatico-Regular';
-  src:font-url('Aquatico-Regular.otf');
+    font-family: 'Aquatico';
+    src: font-url('Aquatico-Regular.eot');
+    src: font-url('Aquatico-Regular.eot?#iefix') format('embedded-opentype'),
+        font-url('Aquatico-Regular.woff2') format('woff2'),
+        font-url('Aquatico-Regular.woff') format('woff'),
+        font-url('Aquatico-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 $my-font: "Aquatico";
-
-@font-face {
-  font-family:'PeaceSans';
-  src:font-url('PeaceSans.otf');
-}
-
-// $my-font: "PeaceSans";
