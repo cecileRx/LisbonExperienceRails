@@ -64,12 +64,6 @@ leak3 = Leak.new(
   )
 leak3.save!
 
-leak4 = Leak.new(
-  title: 'WinLab présent au BIM World 2020' ,
-  description: 'Laborum in aliqua officia qui amet sunt ullamco sed anim quis sint nostrud id eiusmod.',
-  color: '#d2d2c8'
-  )
-leak4.save!
 
 puts 'creating editor'
 
