@@ -18,6 +18,13 @@ class ToursController < ApplicationController
     @tour = Tour.new
   end
 
+  def delete_image_attachment
+    photo = ActiveStorage::Blob.find_signed(params[:id])
+    photo.purge
+    redirect_to tours_path
+  end
+
+
   # GET /tours/1/edit
   def edit
   end
@@ -41,6 +48,7 @@ class ToursController < ApplicationController
   # PATCH/PUT /tours/1
   # PATCH/PUT /tours/1.json
   def update
+
     respond_to do |format|
       if @tour.update(tour_params)
         format.html { redirect_to tours_path, notice: 'Tour was successfully updated.' }
@@ -70,6 +78,6 @@ class ToursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
   def tour_params
-    params.require(:tour).permit(:name, :description, :full_information, photos: [])
+    params.require(:tour).permit(:name, :description, :full_information, :duration, :meeting_point, photos: [])
   end
 end

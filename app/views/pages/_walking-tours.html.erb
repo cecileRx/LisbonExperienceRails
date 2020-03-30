@@ -6,7 +6,7 @@
         <% @tours.each do |tour| %>
           <div class="walking-tours-cards item">
             <% photo = tour.photos[0] %>
-             <%= cl_image_tag photo.key, height: 300, width: 300, crop: :fill %>
+             <%= cl_image_tag photo.key, height: 300, width: 300, crop: :fill if tour.photos.attached? %>
 
                 <h3> <%= tour.name  %> </h3>
                 <p> <%= tour.description %> </p>
