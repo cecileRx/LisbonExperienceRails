@@ -12,6 +12,7 @@
 }
 
 .about-us {
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .about-us-text {
@@ -26,7 +27,7 @@
 
 .about-us-pic {
   padding-top: 7px;
-  padding-left: 102px;
+  text-align: center;
 
 }
 
@@ -34,5 +35,6 @@
   -webkit-box-shadow: 3px 6px 15px -7px #353535;
   -moz-box-shadow: 3px 6px 15px -7px #353535;
   box-shadow: 3px 6px 15px -7px #353535;
+  margin-bottom: 45px;
 
 }
