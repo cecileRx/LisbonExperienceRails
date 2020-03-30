@@ -15,6 +15,8 @@
           <div class="walking-tours-info">
             <h3> <%= tour.name  %> </h3>
             <p> <%= tour.full_information %> </p>
+            <p><b>Duration</b> -<%= tour.duration %> </p>
+            <p><b>Meeting Point</b> - <%= tour.meeting_point %> </p>
           </div>
           <div class="tours-pics">
             <% tour.photos.each do |photo| %>

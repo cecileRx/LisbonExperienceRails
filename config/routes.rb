@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
   resources :pages, only: [:home, :new, :create]
   resources :tours
+  resources :tours do
+  member do
+    delete :delete_image_attachment
+  end
+end
   resources :leaks
   get 'authorized', to: 'tours#edit'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
