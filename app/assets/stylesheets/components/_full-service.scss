@@ -35,6 +35,20 @@
   padding: 50px 180px;
 }
 
+@media only screen and (max-device-width:480px) {
+   .full-service p {
+     padding: 0;
+   }
+
+   .full-service h2 {
+    padding-top: 0px !important;
+  }
+
+  .taylor {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+}
 
 .full-service h2 {
     padding-top: 50px;

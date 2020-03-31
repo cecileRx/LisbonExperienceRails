@@ -13,6 +13,19 @@
   flex-wrap: wrap;
 }
 
+@media only screen and (max-device-width:480px) {
+   .walking-tours {
+    padding: 20px 0px;
+  }
+  #walking-tours h2 {
+    padding-top: 34px;
+  }
+  .walking-tours-cards {
+  width: 350px !important;
+  }
+}
+
+
 .walking-tours-cards {
   border-radius: 5px;
   background-color:$le_cream;

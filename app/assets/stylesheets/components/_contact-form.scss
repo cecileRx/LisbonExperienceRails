@@ -146,3 +146,9 @@
   margin-top: 50px;
   flex-wrap: wrap;
 }
+
+@media only screen and (max-device-width:480px) {
+   .contact-section img {
+      width: 280px;
+   }
+}

@@ -21,5 +21,11 @@ body h2 {
   font-size: 2rem;
 }
 
+@media only screen and (max-device-width:480px) {
+   body h2 {
+    font-size: 1rem;
+}
+}
+
 // @import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
 // @import url(https://fonts.googleapis.com/css?family=Roboto);
