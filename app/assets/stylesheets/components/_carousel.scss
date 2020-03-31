@@ -32,3 +32,30 @@
   font-size: 30px;
 }
 
+@media only screen and (max-device-width:480px) {
+   .carousel-inner h1 {
+      font-size: 13px;
+      right: 43px;
+      top: 50px;
+   }
+  .carousel-inner h2 {
+    color: le_orange;
+    right: 43px;
+    top: 75px;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width:680px) {
+   .carousel-inner h1 {
+      font-size: 13px;
+      right: 43px;
+      top: 50px;
+   }
+  .carousel-inner h2 {
+    color: le_orange;
+    right: 43px;
+    top: 75px;
+    font-size: 8px;
+  }
+}

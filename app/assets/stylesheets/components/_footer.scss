@@ -31,3 +31,9 @@
 .footer .fa-atom {
   color: #D23333;
 }
+
+@media only screen and (max-device-width:480px) {
+   .footer-copyright  {
+     display: none;
+   }
+}
