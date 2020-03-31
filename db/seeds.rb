@@ -23,7 +23,15 @@ tour1 = Tour.new(
   )
 
 
-file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584458546/LisbonExperience/Mod_Lisboa_M0367_oyshdu.jpg")
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1585597236/LisbonExperience/Mod_Lisboa_M0367_kbg8pn.jpg")
+tour1.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
+tour1.save!
+
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1585597144/LisbonExperience/Mod_meontour3_uva6rc.jpg")
+tour1.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
+tour1.save!
+
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1585597277/LisbonExperience/Mod_Lisboa_M0360_jpxx9s.jpg")
 tour1.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
 tour1.save!
 
@@ -36,10 +44,18 @@ In our pathway I’ll talk about some of our most important historical moments l
   meeting_point: 'Hard Rock Cafe - Avenida da Liberdade, 2'
   )
 
+
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1585596752/LisbonExperience/3_Viuva-Lamego-Lisboa-_Luis-Novo_gk8jne.jpg")
+tour2.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
+tour2.save!
+
 file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1584463037/LisbonExperience/Tiles_ofa87k.jpg")
 tour2.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
 tour2.save!
 
+file = URI.open("https://res.cloudinary.com/cecilerxdm71vcz1e/image/upload/v1585596754/LisbonExperience/800px-Sa_Nogueira_Lisboa_loeund.jpg")
+tour2.photos.attach(io: file, filename: "some-image.jpg", content_type: 'image/jpg')
+tour2.save!
 
 puts 'creating leaks'
 
