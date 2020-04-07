@@ -76,6 +76,7 @@
 }
 
 
+
 .tours-title h1 {
   color: $le_orange;
   font-family: $my-font;
@@ -94,6 +95,20 @@
 .walking-tours-info  {
   font-size: 18px;
   padding: 30px 138px;
+}
+
+@media only screen and (max-device-width:480px) {
+   .walking-tours-details {
+    padding: 19px 30px;
+  }
+  .walking-tours-info {
+  font-size: 15px;
+  padding: 0px 0px;
+  }
+
+   .walking-tours-info p {
+  margin-bottom: 2rem;
+  }
 }
 
 .walking-tours-info h3 {
@@ -118,6 +133,7 @@
 .tours-links {
    padding: 30px 20px 30px 150px;
 }
+
 // ---------EDIT TOUR-----------
 .edit-tour-container {
   background-color: $le_cream;
@@ -145,3 +161,34 @@
  padding: 30px 0px;
  font-size: 20px;
 }
+
+// ---------EDIT TOUR FORM-----------
+
+@media only screen and (max-device-width:480px) {
+  .tours-title h1 {
+    padding: 22px 5px 0px 5px;
+    font-size: 2rem;
+  }
+
+   #tour_description {
+      width: 300px;
+   }
+    #tour_full_information  {
+      width: 300px;
+   }
+    #tour_duration {
+      width: 300px;
+   }
+    #tour_meeting_point {
+      width: 300px;
+   }
+   .form-photo-link img {
+    width: 80px;
+    height: 80px;
+   }
+
+   .edit-tour-container h1 {
+    font-size: 1rem;
+    margin-top: 27px;
+   }
+  }
