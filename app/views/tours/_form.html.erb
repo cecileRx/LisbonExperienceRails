@@ -1,6 +1,6 @@
 <div class="container">
 
-    <div class="col-6 mt-3 form-label-style">
+    <div class="col-xs-12 col-sm-6 col-md-6 form-label-style">
         <%= simple_form_for(@tour) do |f| %>
          <%= f.error_notification %>
           <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
