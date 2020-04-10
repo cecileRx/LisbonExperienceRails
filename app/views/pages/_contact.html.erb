@@ -12,7 +12,7 @@
       </div>
 
       <div class="formulaire">
-         <%= form_for @contact, url: pages_path, remote: true do |f| %>
+         <%= form_for @contact, url: 'pages#home', remote: true do |f| %>
             <div class="form-style-6">
               <h1>Contact me!</h1>
               <%= f.text_field  :name, required: true, class: "contact-form-text",placeholder: "Your name" %></br>

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
   root  'pages#home'
+  get 'contact' => 'pages#home'
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   get 'editor', to: 'sessions#new', as: 'editor'
