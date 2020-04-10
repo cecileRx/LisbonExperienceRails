@@ -109,6 +109,13 @@
   font-size: .8em;
 }
 
+.alert-contact {
+    position: fixed;
+    bottom: 264px;
+    right: 152px;
+    z-index: 1000;
+}
+
 .alert-notice {
   background-color: #dff0d8;
   border-color: #d6e9c6;

@@ -7,10 +7,13 @@
           <div class="walking-tours-cards item">
             <% photo = tour.photos[0] %>
              <%= cl_image_tag photo.key, height: 300, width: 300, crop: :fill if tour.photos.attached? %>
-
-                <h3> <%= tour.name  %> </h3>
-                <p> <%= tour.description %> </p>
-                 <%= link_to 'More info', tours_path(tour, :anchor => "#{tour.name}"), class: 'btn btn-outline-secondary' %>
+                <% tour_link = tour.name %>
+                <% tour_identification = tour_link.gsub(/\s+/, '') %>
+                <div id= <%= tour_identification %> >
+                  <h3> <%= tour.name  %> </h3>
+                  <p> <%= tour.description %> </p>
+                </div>
+                 <%= link_to 'More info', tours_path(tour, anchor: tour_identification), class: 'btn btn-outline-secondary' %>
           </div>
         <% end %>
       </div>
