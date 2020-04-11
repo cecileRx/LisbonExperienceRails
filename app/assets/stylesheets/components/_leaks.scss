@@ -8,6 +8,13 @@
   font-size: 30px;
 }
 
+@media only screen and (max-device-width:480px) {
+
+  #leaks h2 {
+    font-size: 1.4em;
+  }
+}
+
 .leaks {
   display: flex;
   justify-content: space-around;
