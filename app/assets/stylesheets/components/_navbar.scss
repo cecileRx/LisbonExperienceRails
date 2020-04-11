@@ -25,5 +25,37 @@ li.nav-item.active a { color: $le_orange !important; }
 }
 
 .sticky-top {
-  padding-left: 62px;
+  padding-left: 60px;
+}
+
+@media (max-device-width: 768px) and (orientation: portrait) {
+    .nav-item a {
+      font-size: 0.8em;
+   }
+
+    .container-fluid img {
+      padding-right: 20px;
+    }
+
+   .sticky-top {
+     padding-left: 10px;
+  }
+}
+
+@media (max-device-width: 1024px) and (orientation: landscape) {
+    .nav-item a {
+      font-size: 1em;
+   }
+
+    .container-fluid img {
+      padding-right: 40px;
+    }
+
+   .sticky-top {
+     padding-left: 30px;
+  }
+
+  .nav-item {
+     padding: 0 10px;
+  }
 }

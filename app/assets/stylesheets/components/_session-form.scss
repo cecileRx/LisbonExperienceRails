@@ -27,3 +27,34 @@
 .form-text input {
   margin-left: 20px;
 }
+
+@media only screen and (max-device-width:480px) {
+   .session-form {
+    margin-left: 15px;
+   }
+
+  .form-text {
+    margin-left: 0px;
+   }
+
+  .container {
+    width: auto !important;
+  }
+
+}
+
+@media (max-device-width: 768px) and (orientation: portrait) {
+     .session-form {
+      margin-left: 35px;
+
+   }
+}
+
+@media (max-device-width: 1366px) and (orientation: landscape) {
+    .session-form {
+      margin-left: 21px;
+   }
+    .container {
+      justify-content: center;
+    }
+}
