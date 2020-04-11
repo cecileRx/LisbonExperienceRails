@@ -32,23 +32,42 @@
   font-size: 30px;
 }
 
-@media only screen and (max-device-width:480px) {
+
+
+
+@media (max-device-width: 1366px) and (orientation: landscape) {
    .carousel-inner h1 {
-      font-size: 13px;
-      right: 43px;
-      top: 50px;
+    right: 204px;
+    top: 167px;
+    font-size: 2.4em;
+   }
+  .carousel-inner h2 {
+    right: 203px;
+    top: 248px;
+    font-size: 1.8em;
+  }
+ }
+
+
+@media (max-device-width: 768px) and (orientation: portrait) {
+   .carousel-inner h1 {
+    font-size: 1.4em;
+    right: 108px;
+    top: 84px;
    }
   .carousel-inner h2 {
     color: le_orange;
-    right: 43px;
-    top: 75px;
-    font-size: 8px;
+    right: 111px;
+    top: 132px;
+    font-size: 1em;
   }
 }
 
-@media only screen and (max-width:680px) {
+
+
+ @media only screen and (max-device-width:480px) {
    .carousel-inner h1 {
-      font-size: 13px;
+      font-size: 14px;
       right: 43px;
       top: 50px;
    }
@@ -56,6 +75,6 @@
     color: le_orange;
     right: 43px;
     top: 75px;
-    font-size: 8px;
+    font-size: 10px;
   }
 }

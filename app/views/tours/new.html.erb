@@ -1,5 +1,7 @@
-<h1>New Tour</h1>
+<div class="new-tour">
+  <div class="new-tour-title text-center">
+    <h2>Create a New Tour!</h2>
+  </div>
+  <%= render 'new_form', tour: @tour %>
 
-<%= render 'form', tour: @tour %>
-
-<%= link_to 'Back', tours_path %>
+</div>

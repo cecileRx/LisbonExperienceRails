@@ -23,8 +23,12 @@ body h2 {
 
 @media only screen and (max-device-width:480px) {
    body h2 {
-    font-size: 1rem;
-}
+    font-size: 2rem;
+  }
+
+  body p {
+    font-size: 0.4em;
+  }
 }
 
 // @import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);

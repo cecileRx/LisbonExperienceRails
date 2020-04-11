@@ -36,18 +36,38 @@
 }
 
 @media only screen and (max-device-width:480px) {
+
+  #full-service{
+    padding-top: 25px;
+  }
    .full-service p {
      padding: 0;
+     font-size: 1em !important;
    }
 
    .full-service h2 {
     padding-top: 0px !important;
+    padding-bottom: 15px;
   }
 
   .taylor {
   margin-left: 10px;
   margin-right: 10px;
+font-size: 0.8em !important;
 }
+
+  .taylor p {
+  font-size: 1em !important;
+}
+
+  .taylor .far {
+  font-size: 1em !important;
+}
+
+  .taylor .fas {
+  font-size: 1em !important;
+}
+
 }
 
 .full-service h2 {

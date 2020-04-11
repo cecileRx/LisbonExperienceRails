@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="col-xs-12 col-sm-6 col-md-6 form-label-style">
+        <%= simple_form_for(@tour) do |f| %>
+         <%= f.error_notification %>
+          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+          <%= f.input :name  %>
+          Description in Home page:
+          <%= f.text_area :description, :rows => 4, :cols => 120 %>
+          Full information in Walking tours:
+          <%= f.text_area :full_information, :rows => 10, :cols => 120 %>
+          Duration:
+          <%= f.text_area :duration, :rows => 3, :cols => 120 %>
+          Meeting-point:
+          <%= f.text_area :meeting_point, :rows => 3, :cols => 120 %>
+          <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+
+          <div class="edit-photo-section ">
+
+            <% @tour.photos.each do |photo| %>
+              <div class="form-photo-link">
+               <%= cl_image_tag photo.key, height: 300, width: 300, crop: :fill %>
+
+               <%= link_to 'Remove', delete_image_attachment_tour_url(photo.signed_id),
+
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %>
+              </div>
+            <% end %>
+
+          </div>
+          <div class="update-section">
+          <%= f.submit 'Create', class: 'btn btn-primary mr-2 mt-3' %> <%= link_to 'Cancel', tours_path, class: 'btn btn-secondary mt-3' %>
+          </div>
+        <% end %>
+        <br>
+        <div class="mr-5 mb-5">
+        <%= link_to 'Show', @tour %> |
+        <%= link_to 'Back', tours_path %>
+      </div>
+    </div>
+
+</div>

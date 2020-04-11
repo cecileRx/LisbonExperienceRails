@@ -41,11 +41,17 @@
    .about-us img {
       width: 180px;
    }
+
   .about-us-text {
     padding-right: 0px;
   }
+
+  .about-us-text p{
+    font-size: 1em !important;
+  }
+
   #about-us h2 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
