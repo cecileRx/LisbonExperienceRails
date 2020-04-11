@@ -101,18 +101,27 @@
   .walking-tours-details {
     padding: 19px 30px;
   }
+
+  .walking-tours-cards img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
   .walking-tours-info {
-  font-size: 15px;
-  padding: 0px 0px;
+    font-size: 15px;
+    padding: 0px 23px;
   }
 
    .walking-tours-info p {
-  margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1em !important;
   }
 }
 
 .walking-tours-info h3 {
   padding-bottom: 20px;
+  font-size: 1.4em !important;
+
 }
 
 .tours-pics {
@@ -128,6 +137,13 @@
   -moz-box-shadow: 3px 6px 15px -7px #353535;
   box-shadow: 3px 6px 15px -7px #353535;
 
+}
+
+.tours-title h1 {
+  font-size: 1.4rem !important;
+}
+.tours-title h1 {
+  font-size: 1.4em !important;
 }
 
 .tours-links {
@@ -192,3 +208,15 @@
     margin-top: 27px;
    }
   }
+
+// ---------NEW TOUR FORM-----------
+
+.new-tour {
+  background-color: $le_cream;
+}
+
+.new-tour h2 {
+   padding-top: 68px;
+   padding-bottom: 30px;
+
+}

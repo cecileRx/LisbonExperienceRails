@@ -5,36 +5,38 @@
     <h1 >WALKING TOURS</h1>
   </div>
 
-     <div class="tours-list">
-        <% @tours.each do |tour| %>
-         <div class="walking-tours-details ">
+  <div class="tours-list">
 
-            <% tour_link = tour.name %>
-            <% tour_identification = tour_link.gsub(/\s+/, '') %>
+    <% @tours.each do |tour| %>
+       <div class="walking-tours-details ">
 
-          <div class="walking-tours-info" id= <%= tour_identification %> >
+          <% tour_link = tour.name %>
+          <% tour_identification = tour_link.gsub(/\s+/, '') %>
+
+         <div class="walking-tours-info" id= <%= tour_identification %> >
 
               <h3> <%= tour.name %> </h3>
               <p> <%= tour.full_information %> </p>
               <p><b>Duration</b> -<%= tour.duration %> </p>
               <p><b>Meeting Point</b> - <%= tour.meeting_point %> </p>
 
-          </div>
-        </div>
-        <div class="tours-pics">
+         </div>
+       </div>
+
+      <div class="tours-pics">
             <% tour.photos.each do |photo| %>
              <%= cl_image_tag photo.key, height: 220, width: 220, crop: :fill, :class => "tours-img" %>
             <% end %>
-        </div>
-
       </div>
+
+
             <% if logged_in? %>
               <%= link_to 'Edit', edit_tour_path(tour), :class => "tours-links" %> <%= link_to 'Destroy', tour, method: :delete, data: { confirm: 'Are you sure?' } %>
             <% end %>
         <% end %>
-        </div>
+
         <% if logged_in? %>
          <p class="editor-new"> <%= link_to 'Create a New Tour!', new_tour_path %></p>
-       <% end %>
-
+    <% end %>
+   </div>
 </div>
