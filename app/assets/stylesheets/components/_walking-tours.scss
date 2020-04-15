@@ -98,26 +98,7 @@
   padding: 30px 138px;
 }
 
-@media only screen and (max-device-width:480px) {
-  .walking-tours-details {
-    padding: 19px 30px;
-  }
 
-  .walking-tours-cards img {
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .walking-tours-info {
-    font-size: 15px;
-    padding: 0px 23px;
-  }
-
-   .walking-tours-info p {
-    margin-bottom: 1rem;
-    font-size: 1em !important;
-  }
-}
 
 .walking-tours-info h3 {
   padding-bottom: 20px;
@@ -141,16 +122,59 @@
 }
 
 .tours-title h1 {
-  font-size: 1.4rem !important;
+  font-size: 2em !important;
 }
-.tours-title h1 {
-  font-size: 1.4em !important;
-}
+
 
 .tours-links {
    padding: 30px 20px 30px 150px;
 }
 
+@media (max-device-width: 1200px) and (orientation: landscape) {
+   .walking-tours-info {
+    font-size: 18px;
+    padding: 19px 75px;
+   }
+    .walking-tours-details {
+   padding: 16px 92px 30px 92px;
+  }
+}
+
+@media (max-device-width: 768px) and (orientation: portrait) {
+  .walking-tours-details {
+      padding: 19px 30px;
+   }
+   .walking-tours-info {
+    font-size: 18px;
+    padding: 19px 75px;
+   }
+
+   .tours-pics {
+     margin-right: 55px;
+     margin-left: 55px;
+   }
+}
+
+@media only screen and (max-device-width:480px) {
+  .walking-tours-details {
+    padding: 19px 30px;
+  }
+
+  .walking-tours-cards img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .walking-tours-info {
+    font-size: 15px;
+    padding: 0px 23px;
+  }
+
+   .walking-tours-info p {
+    margin-bottom: 1rem;
+    font-size: 1em !important;
+  }
+}
 // ---------EDIT TOUR-----------
 .edit-tour-container {
   background-color: $le_cream;
@@ -181,11 +205,38 @@
 
 // ---------EDIT TOUR FORM-----------
 
+.form-label-style {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+  .form-photo-link img {
+    width: 200px;
+    height:200px;
+   }
+
 @media only screen and (max-device-width:480px) {
-  .tours-title h1 {
+
+  .form-label-style {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .form-control {
+    text-align:center;
+  }
+   .form-label-style p {
+    font-size: 1rem;
+  }
+
+ .tours-title h1 {
     padding: 22px 5px 0px 5px;
     font-size: 2rem;
   }
+
 
    #tour_description {
       width: 300px;
@@ -193,6 +244,7 @@
     #tour_full_information  {
       width: 300px;
    }
+
     #tour_duration {
       width: 300px;
    }
@@ -208,6 +260,7 @@
     font-size: 1rem;
     margin-top: 27px;
    }
+
   }
 
 // ---------NEW TOUR FORM-----------

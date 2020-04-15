@@ -1,6 +1,6 @@
 <div class="edit-tour-container">
-  <h3 class="ml-5 pt-3 ">Hello, <%= current_user.email %>!</h3>
-  <h1 class="mb-4 text-center">You want to update <strong>"<%=@tour.name%>"</strong> details?</h1>
+  <h3 class="pt-3 mb-5 text-center">Hello, <%= current_user.email %>!</h3>
+  <h1 class="mb-4 ml-3 mr-3 text-center">You want to update <strong>"<%=@tour.name%>"</strong> details?</h1>
 
     <%= render 'form', tour: @tour %>
 
