@@ -253,12 +253,16 @@
    }
 }
 
-@media only screen and (max-device-width:640px){
+@media only screen and (max-device-width:670px){
     .form-label-style {
     margin-left: auto;
     margin-right: auto;
     width: auto;
     text-align: center;
+  }
+
+  .edit-tour-container h1 {
+    font-size: 1.8em;
   }
 
   #tour-photos {
