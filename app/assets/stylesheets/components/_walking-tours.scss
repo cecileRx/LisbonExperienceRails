@@ -252,6 +252,49 @@
     height: 80px;
    }
 }
+
+@media only screen and (max-device-width:640px){
+    .form-label-style {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  #tour-photos {
+    width: 400px;
+  }
+   #tour_name {
+      width: 400px;
+   }
+
+   #tour_description {
+      width: 400px;
+   }
+    #tour_full_information  {
+      width: 400px;
+   }
+
+    #tour_duration {
+      width: 400px;
+   }
+    #tour_meeting_point {
+      width: 400px;
+   }
+   .edit-photo-section {
+    justify-content: center;
+
+  }
+  .form-photo-link {
+    display: flex;
+    flex-direction: column;
+  }
+   .form-photo-link img {
+    width: 180px;
+    height: 180px;
+   }
+}
+
 @media only screen and (max-device-width:480px) {
 
   .form-label-style {
@@ -274,6 +317,9 @@
     font-size: 2rem;
   }
 
+   #tour_name {
+      width: 300px;
+   }
 
    #tour_description {
       width: 300px;
