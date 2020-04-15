@@ -1,10 +1,11 @@
 
     <div class="form-label-style">
-    <div >
+    <div>
         <%= simple_form_for(@tour) do |f| %>
          <%= f.error_notification %>
           <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-          <%= f.input :name  %>
+          <p>Name:</p>
+          <%= f.text_area :name  %>
           <p>Description in Home page:</p>
           <%= f.text_area :description, :rows => 4, :cols => 100 %>
           <p>Full information in Walking tours: </p>
@@ -15,7 +16,7 @@
           <%= f.text_area :meeting_point, :rows => 3, :cols => 100 %>
           <%= f.input :photos, as: :file, input_html: { multiple: true } %>
 
-          <div class="edit-photo-section ">
+          <div class="edit-photo-section">
 
             <% @tour.photos.each do |photo| %>
               <div class="form-photo-link">
