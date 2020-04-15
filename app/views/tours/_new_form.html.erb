@@ -1,19 +1,19 @@
 <div class="container">
 
-    <div class="col-xs-12 col-sm-6 col-md-6 form-label-style">
+    <div class="col-xs-12 col-sm-6 col-md-6 new-tour-form">
         <%= simple_form_for(@tour) do |f| %>
          <%= f.error_notification %>
           <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
           <%= f.input :name  %>
-          Description in Home page:
-          <%= f.text_area :description, :rows => 4, :cols => 120 %>
-          Full information in Walking tours:
-          <%= f.text_area :full_information, :rows => 10, :cols => 120 %>
-          Duration:
-          <%= f.text_area :duration, :rows => 3, :cols => 120 %>
-          Meeting-point:
-          <%= f.text_area :meeting_point, :rows => 3, :cols => 120 %>
-          <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+          <p>Description in Home page:</p>
+            <%= f.text_area :description, :rows => 4, :cols => 120, :class =>'new-form-input' %>
+          <p>Full information in Walking tours:</p>
+            <%= f.text_area :full_information, :rows => 10, :cols => 120, :class =>'new-form-input' %>
+          <p>Duration:</p>
+            <%= f.text_area :duration, :rows => 3, :cols => 120,:class =>'new-form-input' %>
+          <p>Meeting-point:</p>
+            <%= f.text_area :meeting_point, :rows => 3, :cols => 120, :class =>'new-form-input' %>
+            <%= f.input :photos, as: :file, input_html: { multiple: true } %>
 
           <div class="edit-photo-section ">
 
