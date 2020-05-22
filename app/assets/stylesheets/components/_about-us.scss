@@ -27,6 +27,7 @@
 .about-us-pic {
   padding-top: 7px;
   text-align: center;
+  padding-bottom: 20px;
 
 }
 
@@ -39,7 +40,7 @@
 }
 
 @media (max-device-width: 800px) and (orientation: portrait) {
- .about-us-text {
+ .about-us-text p {
     padding-right: 20px;
     padding-left: 55px;
  }
@@ -50,10 +51,27 @@
 
 }
 
-@media only screen and (max-device-width:480px) {
+@media (max-device-width: 800px) and (orientation: landscape) {
+ .about-us-text  {
+    padding-right: 10px;
+    padding-left: 55px;
+ }
    .about-us img {
+    margin-bottom: 46px;
+    margin-top: 66px;
+   }
+
+   #about-us h2 {
+    padding: 27px 0px 15px 0px;
+   }
+
+}
+
+@media only screen and (max-device-width:480px) {
+   .about-us-pic img {
       width: 180px;
       margin-top: 15px;
+      margin-bottom: 17px;
    }
 
   .about-us-text {
