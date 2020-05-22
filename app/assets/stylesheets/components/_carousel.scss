@@ -2,7 +2,6 @@
 
 #banner {
   position: relative;
-  text-align: center;
   background-size: cover !important;
   padding: 90px 10px;
   color:  $le_cream;
@@ -10,71 +9,70 @@
 
 }
 
-.carousel-inner h1 {
-  font-family: $my-font;
-  position: absolute;
-  text-align: right;
-  color: white;
-  right: 209px;
-  top: 174px;
-  z-index: 2;
-  font-size: 40px;
-}
 
-.carousel-inner h2 {
-  position: absolute;
-  font-family: $my-font;
-  text-align: right;
-  color: le_orange;
-  right: 209px;
-  top: 242px;
-  z-index: 2;
-  font-size: 30px;
-}
-
-
-
-
-@media (max-device-width: 1366px) and (orientation: landscape) {
-   .carousel-inner h1 {
-    right: 191px;
-    top: 167px;
-    font-size: 2.4em;
-   }
-  .carousel-inner h2 {
-    right: 203px;
-    top: 248px;
-    font-size: 1.8em;
+.carousel-title {
+    position: absolute;
+    right: 12%;
+    top: 22%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
   }
- }
 
-
-@media (max-device-width: 768px) and (orientation: portrait) {
-   .carousel-inner h1 {
-    font-size: 1.4em;
-    right: 108px;
-    top: 84px;
-   }
-  .carousel-inner h2 {
+.carousel-title h2{
+    font-size: 3.8vw;
+    font-family: $my-font;
     color: le_orange;
-    right: 111px;
-    top: 132px;
-    font-size: 1em;
   }
-}
 
 
 
- @media only screen and (max-device-width:480px) {
-   .carousel-inner h1 {
-      font-size: 14px;
-      right: 43px;
-      top: 50px;
-   }
-  .carousel-inner h2 {
-    color: le_orange;
-    right: 43px;
-    top: 75px;
-    font-size: 10px;
-  }
-}
+
+
+
+
+// @media (max-device-width: 1366px) and (orientation: landscape) {
+//    .carousel-inner h1 {
+//     // right: 191px;
+//     // top: 167px;
+//     // font-size: 2.4em;
+//    }
+//   .carousel-inner h2 {
+//     right: 203px;
+//     top: 248px;
+//     font-size: 1.8em;
+//   }
+//  }
+
+
+// @media (max-device-width: 768px) and (orientation: portrait) {
+//    .carousel-inner h1 {
+//     font-size: 1.4em;
+//     right: 108px;
+//     top: 84px;
+//    }
+//   .carousel-inner h2 {
+//     color: le_orange;
+//     right: 111px;
+//     top: 132px;
+//     font-size: 1em;
+//   }
+// }
+
+
+
+//  @media only screen and (max-device-width:480px) {
+//    .carousel-inner h1 {
+//       font-size: 14px;
+//       right: 43px;
+//       top: 50px;
+//    }
+//   .carousel-inner h2 {
+//     color: le_orange;
+//     right: 43px;
+//     top: 75px;
+//     font-size: 10px;
+//   }
+// }

@@ -1,41 +1,67 @@
 <!--  _ _ _ _ navbar_ _ _ _ -->
 
-    <nav id="nav-wrap" class="navbar nav-mine navbar-expand-md navbar-dark bg-dark sticky-top" >
+    <nav id="nav-wrap" class="navbar nav-mine navbar-expand-md navbar-dark bg-dark" >
       <div class="container-fluid" >
-         <a class="navbar-brand">
-          <%= link_to root_path do %>
-           <%= image_tag('LXP-logo-b2.png') %>
-          <% end %>
-         </a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
           <span class="navbar-toggler-icon"></span></button>
+            <div class="footer-links-smscreen">
+                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
 
-              <div class="collapse navbar-collapse" id="mynav" style=" margin-right: 265px;">
-              <ul class="navbar-nav nav-mine ml-auto" >
-                 <li class="nav-item active" >
-                  <%= link_to "HOME", root_path(:anchor => "home"), class:"nav-link smoothscroll mr-3" %>
-                  </li>
+            </div>
+              <div class="header-nav-custom w-100">
+                <div id="header-up-section" class="header-up d-flex justify-content-between">
+                  <div class="header-logo">
+                    <a class="navbar-brand ml-5">
+                      <%= link_to root_path do %>
+                       <%= image_tag('LXP-logo-b2.png') %>
+                      <% end %>
+                    </a>
+                  </div>
+                   <div class="footer-links mdscreen">
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
 
-                  <li class="nav-item" >
-                  <%=link_to "ABOUT ME", root_path(:anchor => "about-us"), class:"nav-link smoothscroll mr-3" %>
-                  </li>
-
-                  <li class="nav-item" >
-                  <%= link_to "WALKING TOURS", root_path(:anchor => "walking-tours"), class:"nav-link smoothscroll mr-3" %>
-                  </li>
-
-                  <li class="nav-item" >
-                    <%= link_to "FULL SERVICE", root_path(:anchor => "full-service"), class:"nav-link smoothscroll mr-3" %>
-                  </li>
-
-                  <li class="nav-item" >
-                    <%= link_to "NEWS", root_path(:anchor => "leaks"), class:"nav-link smoothscroll mr-3" %>
-                  </li>
-
-                  <li class="nav-item" >
-                  <%= link_to "CONTACT", root_path(:anchor => "contact-us"), class:"nav-link smoothscroll mr-3" %>
-                  </li>
-              </ul>
-        </div>
+                   </div>
+                </div>
+              </div>
       </div>
-    </nav>
+      </nav>
+
+      <nav id="nav-wrap" class="navbar sticky-top nav-mine navbar-expand-md navbar-dark bg-dark" >
+
+                <div class="collapse navbar-collapse" id="mynav" >
+
+
+                        <ul class=" container-md list-unstyled" >
+                         <li class="nav-item pt-2 active" >
+                          <%= link_to "HOME", root_path(:anchor => "home"), class:"nav-link smoothscroll " %>
+                          </li>
+
+                          <li class="nav-item" >
+                          <%=link_to "ABOUT ME", root_path(:anchor => "about-us"), class:"nav-link smoothscroll " %>
+                          </li>
+
+                          <li class="nav-item" >
+                          <%= link_to "WALKING TOURS", root_path(:anchor => "walking-tours"), class:"nav-link smoothscroll " %>
+                          </li>
+
+                          <li class="nav-item" >
+                            <%= link_to "FULL SERVICE", root_path(:anchor => "full-service"), class:"nav-link smoothscroll " %>
+                          </li>
+
+<!--                           <li class="nav-item" >
+                            <%= link_to "NEWS", root_path(:anchor => "leaks"), class:"nav-link smoothscroll " %>
+                          </li> -->
+
+                          <li class="nav-item" >
+                          <%= link_to "CONTACT", root_path(:anchor => "contact-us"), class:"nav-link smoothscroll " %>
+                          </li>
+                        </ul>
+
+
+              </div>
+      </nav>

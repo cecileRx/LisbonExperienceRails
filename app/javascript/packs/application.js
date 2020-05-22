@@ -41,3 +41,37 @@ function initiateActiveTab () {
 }
 
 initiateActiveTab ();
+
+
+
+
+/*------------------------------------------------------------------*/
+/* Hide the logo and social links of the navigation bar when scroll
+--------------------------------------------------------------------*/
+
+// var scrollpos = window.scrollY;
+// var header = document.getElementById("header-up-section");
+
+// function add_class_on_scroll() {
+//     header.classList.add("hidden");
+// }
+
+// function remove_class_on_scroll() {
+//     header.classList.remove("hidden");
+//     header.classList.add("shownav");
+// }
+
+// window.addEventListener('scroll', function(){
+
+//     scrollpos = window.scrollY;
+
+//     if(scrollpos > 20){
+//         add_class_on_scroll();
+//     }
+//     else {
+//         remove_class_on_scroll();
+//     }
+//     console.log(scrollpos);
+// });
+
+
