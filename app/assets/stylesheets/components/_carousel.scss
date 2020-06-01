@@ -12,21 +12,20 @@
 
 .carousel-title {
     position: absolute;
-    right: 12%;
-    top: 22%;
-    left: 15%;
+    top: 24%;
+    left: 37%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: right;
+
   }
 
 .carousel-title h2{
-    font-size: 3.8vw;
+    font-size: 3.3vw;
     font-family: $my-font;
     color: le_orange;
+    text-shadow: 1px 1px #ff0000;
   }
-
 
 
 

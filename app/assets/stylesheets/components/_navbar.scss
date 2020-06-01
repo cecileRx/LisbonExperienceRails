@@ -28,6 +28,9 @@ li.nav-item.active a { color: $le_orange !important; }
   padding: 5px 0px 5px 60px;
 }
 
+.sticky-top .sticky-top {
+  padding-bottom: 0px;
+}
 .header-logo {
   padding: 20px 0px;
 }
