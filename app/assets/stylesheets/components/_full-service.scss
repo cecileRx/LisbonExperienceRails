@@ -3,6 +3,12 @@
 
 }
 
+#full-service-header h2 {
+  font-size: 2em !important;
+
+}
+
+
 #full-service .customize {
   display: flex;
   justify-content: space-around;
@@ -32,7 +38,7 @@
 
 .full-service p {
   font-size: 18px;
-  padding: 50px 180px;
+  padding: 20px 180px;
 }
 
 @media (max-device-width: 1366px) and (orientation: landscape) {
@@ -117,8 +123,9 @@
 
 .full-service h2 {
   font-size: 1.4em;
-  padding-top: 50px;
   color: $le_orange;
+  padding-top: 40px;
+  padding-bottom: 20px;
 
 }
 
