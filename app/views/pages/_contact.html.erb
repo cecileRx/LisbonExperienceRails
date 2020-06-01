@@ -4,13 +4,6 @@
        <%= render 'shared/flash' %>
     </div>
 
-    <div class="contact-section d-flex justify-content-around">
-      <div class="trip_advisor_widgets">
-        <%= image_tag "trip_advisor_example.png", :width => 550, :height => 450 %>
-
-
-      </div>
-
       <div class="formulaire">
          <%= form_for @contact, url: 'pages#home', remote: true do |f| %>
             <div class="form-style-6">
